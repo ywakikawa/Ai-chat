@@ -1,15 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <Prompt/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Prompt from "./components/Prompt.vue";
+import OpenAiPrompt from "./components/OpenAiPrompt.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Prompt,
+  },
 }
+
+
+
+
+
+
 </script>
