@@ -4,14 +4,15 @@
   <button @click="sendMessage()" >送信</button>
   <p>{{errors}}</p>
   <p v-if="aiMessage">{{aiMessage}}</p>
-
 </template>
 
 <script>
 import axios from 'axios';
+import Miibo from "./miibo.vue";
 export default {
 
   name: 'Prompt',
+  components: {Miibo},
   data() {
     return {
       count: 0,
