@@ -8,11 +8,9 @@
 
 <script>
 import axios from 'axios';
-import Miibo from "./miibo.vue";
 export default {
 
   name: 'Prompt',
-  components: {Miibo},
   data() {
     return {
       count: 0,
