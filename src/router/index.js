@@ -13,6 +13,21 @@ const routes = [
         path: '/prompt',
         name: 'Prompt',
         component: Prompt,
+    },
+    {
+        path: '/numberOne',
+        name: 'numberOne',
+        component: () => import('../components/numberOne.vue'),
+    },
+    {
+        path: '/numberTwo',
+        name: 'numberTwo',
+        component: () => import('../components/numberTwo.vue'),
+    },
+    {
+        path: '/numberThree',
+        name: 'numberThree',
+        component: () => import('../components/numberThree.vue'),
     }
 ];
 
