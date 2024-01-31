@@ -4,33 +4,10 @@
     <div class="balloon-009">
       <img class="img" src="../../download_image_1703836211774.png" alt="" loading="lazy" decoding="async"/>
       <p v-if="createAnswer">{{ aiMessage }}</p>
-      <svg v-else xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="60" height="60" fill="#80527e">
-        <path transform="translate(2)" d="M0 12 V20 H4 V12z">
-          <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
-                   dur="1.2s" calcMode="spline" begin="0" repeatCount="indefinite"
-                   keytimes="0;.2;.5;1" keySplines=".2 .2 .4 .8;.2 0.6 .4 .8;.2 .8 .4 .8"/>
-        </path>
-        <path transform="translate(8)" d="M0 12 V20 H4 V12z">
-          <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
-                   dur="1.2s" calcMode="spline" begin=".2" repeatCount="indefinite"
-                   keytimes="0;.2;.5;1" keySplines=".2 .2 .4 .8;.2 0.6 .4 .8;.2 .8 .4 .8"/>
-        </path>
-        <path transform="translate(14)" d="M0 12 V20 H4 V12z">
-          <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
-                   dur="1.2s" calcMode="spline" begin=".4" repeatCount="indefinite"
-                   keytimes="0;.2;.5;1" keySplines=".2 .2 .4 .8;.2 0.6 .4 .8;.2 .8 .4 .8"/>
-        </path>
-        <path transform="translate(20)" d="M0 12 V20 H4 V12z">
-          <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
-                   dur="1.2s" calcMode="spline" begin=".6" repeatCount="indefinite"
-                   keytimes="0;.2;.5;1" keySplines=".2 .2 .4 .8;.2 0.6 .4 .8;.2 .8 .4 .8"/>
-        </path>
-        <path transform="translate(26)" d="M0 12 V20 H4 V12z">
-          <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z"
-                   dur="1.2s" calcMode="spline" begin=".8" repeatCount="indefinite"
-                   keytimes="0;.2;.5;1" keySplines=".2 .2 .4 .8;.2 0.6 .4 .8;.2 .8 .4 .8"/>
-        </path>
-      </svg>
+      <div v-else class="wrapper">
+        <div class="loader-1"></div>
+        <h6>　　考え中……</h6>
+      </div>
     </div>
     <div class="space"></div>
     <div class="balloon-010">
@@ -89,6 +66,39 @@ export default {
 </script>
 
 <style>
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.loader-1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 4px;
+  border-color: #000000 #00000010 #00000010;
+  position: relative;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes stagger {
+  25% {
+    border-color: #00000010 #000000 #00000010 #00000010;
+  }
+  50% {
+    border-color: #00000010 #00000010 #000000 #00000010;
+  }
+  75% {
+    border-color: #00000010 #00000010 #00000010 #000000;
+  }
+}
 .balloon-009 {
   display: flex;
   justify-content: center;
