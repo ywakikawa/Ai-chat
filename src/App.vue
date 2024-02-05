@@ -14,7 +14,7 @@
       <router-link to="/numberTwo">財満さんページを表示</router-link>
     </div>
     <div>
-<!--      <router-link to="/numberThree">numberThreeを表示</router-link>-->
+<!--      <router-link to="/numberThree">永川さんページを表示</router-link>-->
     </div>
   </div>
   <router-view></router-view>
