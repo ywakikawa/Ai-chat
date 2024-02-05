@@ -5,16 +5,16 @@
       <router-link to="/prompt">Promptを表示</router-link>
     </div>
     <div>
-      <router-link to="/miibo">miiboを表示</router-link>
+      <router-link to="/miibo">サンプルを表示</router-link>
     </div>
     <div>
-      <router-link to="/numberOne">numberOneを表示</router-link>
+      <router-link to="/numberOne">大野さんページを表示</router-link>
     </div>
     <div>
-      <router-link to="/numberTwo">numberTwoを表示</router-link>
+      <router-link to="/numberTwo">財満さんページを表示</router-link>
     </div>
     <div>
-      <router-link to="/numberThree">numberThreeを表示</router-link>
+<!--      <router-link to="/numberThree">numberThreeを表示</router-link>-->
     </div>
   </div>
   <router-view></router-view>

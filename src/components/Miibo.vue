@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>お話してみよう〜〜</h1>
+    <h1>サンプル</h1>
     <div class="balloon-009">
       <img class="img" src="../../download_image_1703836211774.png" alt="" loading="lazy" decoding="async"/>
       <p v-if="createAnswer">{{ aiMessage }}</p>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>2</h1>
+    <h1>2.財満さんページ</h1>
     <div>
 <!--      <img class="img" src="../../download_image_1703836211774.png" alt="" loading="lazy" decoding="async"/>-->
       <p v-if="createAnswer">{{ aiMessage }}</p>
